@@ -1,0 +1,35 @@
+/* profile card styles */
+.body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Social Media Icons */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+nav a[href*="x.com"]:hover {
+  color: #000000; /* X (formerly Twitter) color */
+}
+
+nav a[href*="github"]:hover {
+  color: #171515; /* GitHub color for GitHub icon */
+}

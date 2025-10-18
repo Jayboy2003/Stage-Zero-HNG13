@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <article data-testid="data-testid = test-profile-card">
+      <figure>
+        <img
+          src="avatar.jpg"
+          alt="Jalal's Avatar"
+          data-testid="test-user-avatar"
+        />
+        <figcaption>Dev_Jalal</figcaption>
+      </figure>
+      <header>
+        <h2 data-testid="header-title">Jalaludeen Ademosu</h2>
+      </header>
+      <section>
+        <p data-testid="test-user-bio">
+          Hello! I'm Jalal, a web developer with a passion for creating
+          beautiful and functional websites. I love coding and exploring new
+          technologies.
+        </p>
+        <p>Current Time (ms): <span data-testid="test-user-time"></span></p>
+      </section>
+
+      <nav data-testid="test-user-social-links">
+        <ul>
+          <li>
+            <a
+              href="https://x.com/AdeyemiJalal"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Jayboy2003"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <section data-testid="test-user-hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Coding</li>
+          <li>Learning</li>
+          <li>Chatting</li>
+        </ul>
+      </section>
+
+      <section data-testid="test-user-dislikes">
+        <h3>Dislikes</h3>
+        <ul>
+          <li>Laziness</li>
+          <li>Noise</li>
+          <li>Negativity</li>
+        </ul>
+    </article>
+    <script src="script.js"></script>
+  </body>
+</html>
