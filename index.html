@@ -3,76 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Jalaludeen Ademosu – Web Developer</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
-    <article data-testid="test-profile-card">
-      <figure aria-label="profile-picture">
-        <img
-          src="avatar.jpg"
-          alt="Jalal's Avatar"
-          data-testid="test-user-avatar"
-        />
-        <figcaption>Dev_Jalal</figcaption>
-      </figure>
-      <header>
-        <h2 data-testid="test-user-name">Jalaludeen Ademosu</h2>
-      </header>
-      <section>
-        <p data-testid="test-user-bio">
-          Hello! I'm Jalal, a web developer with a passion for creating
-          beautiful and functional websites. I love coding and exploring new
-          technologies.
-        </p>
-        <p>Current Time (ms): <span data-testid="test-user-time"></span></p>
-      </section>
+    <main>
+      <article
+        data-testid="test-profile-card"
+        role="article"
+        aria-labelledby="profile-name"
+      >
+        <figure>
+          <img
+            src="avatar.jpg"
+            alt="Jalaludeen Ademosu smiling, wearing a blue shirt"
+            data-testid="test-user-avatar"
+            width="120"
+            height="120"
+          />
+          <figcaption class="visually-hidden">Profile of Dev_Jalal</figcaption>
+        </figure>
 
-      <nav data-testid="test-user-social-links">
-        <ul>
-          <li>
-            <a
-              href="https://x.com/AdeyemiJalal"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid="test-user-social-twitter"
-              ><i class="fa-brands fa-x-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/Jayboy2003"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid="test-user-social-github"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
+        <div class="profile-content">
+          <header>
+            <h1 id="profile-name" data-testid="header-title">
+              Jalaludeen Ademosu
+            </h1>
+            <p class="username">@Dev_Jalal</p>
+          </header>
 
-      
-      <section data-testid="test-user-hobbies">
-        <h3>Hobbies</h3>
-        <ul>
-          <li>Coding</li>
-          <li>Learning</li>
-          <li>Chatting</li>
-        </ul>
-      </section>
+          <section>
+            <p data-testid="test-user-bio">
+              Hello! I'm Jalal, a web developer with a passion for creating
+              beautiful and functional websites. I love coding and exploring new
+              technologies.
+            </p>
+            <p>
+              Current Time (ms):
+              <span data-testid="test-user-time" aria-live="polite"></span>
+            </p>
+          </section>
 
-      <section data-testid="test-user-dislikes">
-        <h3>Dislikes</h3>
-        <ul>
-          <li>Laziness</li>
-          <li>Noise</li>
-          <li>Negativity</li>
-        </ul>
-    </article>
+          <nav
+            data-testid="test-user-social-links"
+            aria-label="Social media links"
+          >
+            <ul>
+              <li>
+                <a
+                  href="https://x.com/AdeyemiJalal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                  aria-label="Twitter: @AdeyemiJalal"
+                >
+                  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Jayboy2003"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                  aria-label="GitHub: Jayboy2003"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="interests-grid">
+            <section data-testid="test-user-hobbies">
+              <h2>Hobbies</h2>
+              <ul>
+                <li>Coding</li>
+                <li>Learning</li>
+                <li>Chatting</li>
+              </ul>
+            </section>
+
+            <section data-testid="test-user-dislikes">
+              <h2>Dislikes</h2>
+              <ul>
+                <li>Laziness</li>
+                <li>Noise</li>
+                <li>Negativity</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
