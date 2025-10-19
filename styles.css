@@ -7,14 +7,16 @@
 
 :root {
   /* Color Palette */
-  --bg-color: #f3f3f3;
-  --card-bg: rgba(71, 11, 11, 0.85);
+  --gradient-1: #2c3e50;
+  --gradient-2: #3498db;
+  --gradient-3: #2980b9;
+  --card-bg: rgba(71, 11, 11, 0.95);
   --text-primary: #ffffff;
   --text-secondary: #e6ebf2;
   --border-color: #8b4513;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  --hover-transform: translateY(-6px);
-  --transition: all 0.25s ease;
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  --hover-transform: translateY(-6px) scale(1.02);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Spacing */
   --space-xs: 0.5rem;
@@ -29,7 +31,14 @@
 
 body {
   font-family: var(--font-base);
-  background-color: var(--bg-color);
+  background: linear-gradient(
+    -45deg,
+    var(--gradient-1),
+    var(--gradient-2),
+    var(--gradient-3)
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   color: var(--text-primary);
   display: flex;
   justify-content: center;
@@ -98,6 +107,22 @@ p[data-testid="test-user-bio"] {
 /* ===== Social Links ===== */
 nav[data-testid="test-user-social-links"] ul {
   list-style: none;
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  margin-top: var(--space-md);
+}
+
+nav[data-testid="test-user-social-links"] a {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  transition: var(--transition);
+  display: inline-block;
+}
+
+nav[data-testid="test-user-social-links"] a:hover {
+  transform: translateY(-3px) scale(1.15);
+  filter: brightness(1.2);
   display: flex;
   gap: 1.5rem;
   justify-content: center;
