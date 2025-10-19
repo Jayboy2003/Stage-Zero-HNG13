@@ -7,9 +7,11 @@
 
 :root {
   /* Color Palette */
-  --gradient-1: #2c3e50;
-  --gradient-2: #3498db;
-  --gradient-3: #2980b9;
+  :root {
+    --gradient-1: #1a0a0a;
+    --gradient-2: #2c0f0f;
+    --gradient-3: #3d1515;
+  }
   --card-bg: rgba(71, 11, 11, 0.95);
   --text-primary: #ffffff;
   --text-secondary: #e6ebf2;
@@ -46,7 +48,17 @@ body {
   min-height: 100vh;
   padding: var(--space-sm);
 }
-
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* ===== Visually Hidden (for a11y) ===== */
 .visually-hidden {
   position: absolute;
