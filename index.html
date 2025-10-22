@@ -8,12 +8,21 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-..."
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
   </head>
   <body>
+    <!-- Navigation -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
     <main>
       <article
         data-testid="test-profile-card"
@@ -78,6 +87,17 @@
                   <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/jalal-adeyemi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                  aria-label="LinkedIn: jalal-adeyemi"
+                >
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
             </ul>
           </nav>
 
@@ -103,6 +123,54 @@
         </div>
       </article>
     </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div>
+          <nav aria-label="Footer navigation">
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-social" aria-label="Social media links">
+          <a
+            href="https://x.com/AdeyemiJalal"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://github.com/Jayboy2003"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/jalal-adeyemi"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>
+          &copy; 2025 <a href="index.html">Jalaludeen Ademosu</a>. All rights
+          reserved. Built with passion and code.
+        </p>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
